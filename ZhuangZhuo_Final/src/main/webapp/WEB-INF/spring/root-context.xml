@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="userValidator" class="com.zhuo.travel.validator.UserValidator"></bean>	
+	<bean id="userDao" class="com.zhuo.travel.dao.UserDao" ></bean>
+	<bean id="adminDao" class="com.zhuo.travel.dao.AdminDao" ></bean>
+	<bean id="countryDao" class="com.zhuo.travel.dao.CountryDao" ></bean>
+	<bean id="agentDao" class="com.zhuo.travel.dao.AgentDao" ></bean>
+	<bean id="orderDao" class="com.zhuo.travel.dao.OrderDao" ></bean>
+	<bean id="tripDao" class="com.zhuo.travel.dao.TripDao" ></bean>
+	<bean id="travellerDao" class="com.zhuo.travel.dao.TravellerDao" ></bean>
+</beans>
+

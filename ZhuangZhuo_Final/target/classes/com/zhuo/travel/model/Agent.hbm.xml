@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 18, 2015 7:51:18 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.zhuo.travel.model.Agent" table="agent">
+        <id name="agentID" type="java.lang.Integer">
+            <column name="agentID" />
+           <generator class="identity" />
+        </id>
+        <property name="username" type="java.lang.String">
+            <column name="name" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="password" />
+        </property>
+        <property name="ein" type="java.lang.String">
+            <column name="EIN" />
+        </property>
+         <property name="approve" type="java.lang.String">
+            <column name="approve" />
+        </property>
+    </class>
+</hibernate-mapping>
