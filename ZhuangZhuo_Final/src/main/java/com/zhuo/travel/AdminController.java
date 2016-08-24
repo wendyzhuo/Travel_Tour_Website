@@ -45,7 +45,6 @@ public class AdminController {
 					model.addAttribute("message", m);
 					}
 					return returnVal;
-					
 				}
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
@@ -64,7 +63,6 @@ public class AdminController {
 			try {
 				HttpSession session =request.getSession();
 				if(session.getAttribute("admin")!=null){
-					
 				String[] messageSet=request.getParameterValues("lock");
 				agentDao.lockAgent(messageSet);;
 				Agent agent = (Agent)session.getAttribute("agent");
@@ -88,7 +86,6 @@ public class AdminController {
 			try {
 				HttpSession session =request.getSession();
 				if(session.getAttribute("admin")!=null){
-					
 				String[] messageSet=request.getParameterValues("approve");
 				agentDao.approveAgent(messageSet);;
 				Agent agent = (Agent)session.getAttribute("agent");
